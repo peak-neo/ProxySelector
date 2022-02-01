@@ -1,0 +1,116 @@
+body{
+    background-image: url(./bg-yokohama.jpg);
+
+}
+
+footer{
+    color: blanchedalmond;
+}
+
+#master{
+    border: black;
+    border-width: 1px;
+    text-align: center;
+	float: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 74.4%;
+}
+
+#guide_top{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#usage{
+    width: 95%;
+    height: 84%;
+    background-color: lightcyan;
+    font-size: large;
+    color: black;
+    opacity: 50%;
+}
+
+#intro	{
+	float: left;
+    border-color: cyan;
+    border-width: 4px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-style: double;
+    width: 25%;
+    height: 735px;
+    font-size: xx-large;
+}
+
+table{
+    margin: 0 auto;
+}
+
+#thead {
+    color: mediumblue;
+    /* background-color: rgb(52, 202, 202); */
+}
+
+#tbody {
+    color: darkblue;
+    /* background-color: lightcyan; */
+}
+
+.tblock {
+    height: 45px;
+    width: 125px;
+    text-align: center;
+    font-size: larger;
+    color: black;
+}
+
+#submitb {
+    text-align: center;
+    height: 30px;
+    width: 120px;
+    /* background-color: lightcyan; */
+    /* border: lightskyblue; */
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#submitb:active{
+    background-color: rgb(85, 185, 185);
+}
+
+#submitb:hover{
+    background-color: lightgray;
+    width: 123px;
+    height: 32px;
+}
+
+.userInput {
+    width: 125px;
+    /* background-color: lightcyan; */
+    font-size: large;
+    opacity: 60%;
+}
+
+#result {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: larger;
+}
+
+#result_proxies {
+    height: 350px;
+    width: 650px;
+    background-color: lightcyan;
+    font-size: large;
+    color: black;
+    opacity: 60%;
+}
+
+footer{
+    text-align: center;
+}

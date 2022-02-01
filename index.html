@@ -1,37 +1,69 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/peak-neo/ProxySelector/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Choose</title>
+    <!-- import css -->
+    <link rel="stylesheet" href="./src/index/Proxy.css">
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
+	
+	<div id = "intro">
+		<p>使用方法</p>
+        <!-- <p>
+             <li>在右侧表格中按提示输入信息</li>
+             <li>点击提交按钮获取节点连接</li>
+             <li>在结果框中复制链接，导入到客户端里</li>
+        </p> -->
+        <iframe id="usage" src="./src/usage/usage.html" frameborder="1px"></iframe>
+	</div>
+    
+    <div id="master">
+        <!-- show the method to search -->
+        <p id="guide_top">国家地区：如
+            <code>
+            美国=US，日本=JP，香港=HK，台湾=TW，新加坡=SG，加拿大=CA，英国=GB，澳大利亚=AU，德国=DE，法国=FR，瑞士=CH，荷兰=NL，印度=ID，
+        </code> <br> 不同国家之间使用英文半角逗号隔开<br> 协议名：可选 <code>ss,ssr,vmess,trojan</code> <br> 不同协议之间也用英文半角都好间隔开
+            <br> 速度：speed=10,30 ----筛选速度在10到30之间的节点 按速度筛选不常用，常用国家和协议配合筛选
+        </p>
+        <hr>
 
-### Markdown
+        <!-- draw a table -->
+        <table border="1">
+            <thead id="thead">
+                <!-- draw table head(4 rows) -->
+                <tr>
+                    <td class="tblock">country</td>
+                    <td class="tblock">type</td>
+                    <td class="tblock">low speed</td>
+                    <td class="tblock">top speed</td>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <td><input type="text" id="country" class="userInput" value="US"></td>
+                <td><input type="text" id="type" class="userInput" value="vmess"></td>
+                <td><input type="text" id="speedLow" class="userInput" value=""></td>
+                <td><input type="text" id="speedTop" class="userInput" value=""></td>
+            </tbody>
+        </table>
+        <br>
+        <!-- submit button -->
+        <input type="button" id="submitb" value="Submit" onclick="genLink()">
+        <input type="checkbox" id="checkAll" value="All proxies">All proxies
+        <hr>
+        <p id="result">All Proxies: </p>
+        <!-- Total {num} proxies. -->
+        <iframe id="result_proxies" src="https://proxy.yugogo.xyz/clash/proxies" frameborder="1"></iframe>
+        <footer>
+            made fucking gui,but can use. <br>thanks for using...
+        </footer>
+    </div>
+    <!-- import js -->
+    <script src="./src/index/Proxy.js"></script>
+</body>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/peak-neo/ProxySelector/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</html>

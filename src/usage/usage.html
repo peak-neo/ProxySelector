@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <link rel="stylesheet" href="./usage.css">
+    <title>Usage</title>
+</head>
+
+<body class='typora-export os-windows'>
+    <div class='typora-export-content'>
+        <div id='write' class=''>
+            <h1 id='winxray以及获取3000服务节点'><span>WinXray以及获取3000+服务节点</span></h1>
+            <h2 id='唠唠闲嗑'><span>唠唠闲嗑</span></h2>
+            <p><span>前一段时间写过一个使用v-two-ray和Cklash进行Scientific上网的博客，但是毕竟那样的方法还是有</span><strong><span>大大地</span></strong><span>不足：节点少；速度慢。所以今天就来介绍一款新的Sci上网软件——WinXray。</span>
+            </p>
+            <p><span>先来看看WinXray界面：</span><img
+                    src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210810222015357.png"
+                    referrerpolicy="no-referrer" alt="image-20210810222015357"></p>
+            <p>&nbsp;</p>
+            <p><span>这个是我自己改写后的，但仍可以看出和以前的V-Two-Ray界面相似。也是全局模式，PAC模式，但这款软件多了两项功能：自动测速和自动切换更好的服务器</span></p>
+            <p><span>在工具一栏中，还多出了几项小工具</span><img
+                    src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210810221741916.png"
+                    referrerpolicy="no-referrer" alt="image-20210810221741916"></p>
+            <p><span>看到这里是不是饥渴难耐了</span><img
+                    src="https://img2020.cnblogs.com/blog/2493192/202108/2493192-20210811104208852-1319363934.png"
+                    referrerpolicy="no-referrer" alt="image"><img
+                    src="https://img2020.cnblogs.com/blog/2493192/202108/2493192-20210811104208852-1319363934.png"
+                    referrerpolicy="no-referrer" alt="image"><img
+                    src="https://img2020.cnblogs.com/blog/2493192/202108/2493192-20210811104208852-1319363934.png"
+                    referrerpolicy="no-referrer" alt="image"></p>
+            <p><span>下面我们就来详细认识一下这款软件吧。</span></p>
+            <h2 id='winxray源码下载及编译'><span>WinXray源码下载及编译</span></h2>
+            <p><span>WinXray在GitHub有源码和编译好的发行版</span></p>
+            <p><a href='https://github.com/miduo2689/winXray'><span>点此下载源码</span></a></p>
+            <p><a href='https://github.com/TheMRLL/winxray'><span>点此下载发行版</span></a></p>
+            <p><span>发行版十分小巧，下载解压即可使用。这里主要讲讲编译源码。</span></p>
+            <p><strong><span>软件源码已放弃版权贡献到公共域</span></strong><span> ，源码可使用 </span><a
+                    href='http://www.aardio.com/'><span>aardio</span></a><span> 编译生成单文件绿色EXE，</span><strong><a
+                        href='https://github.com/miduo2689/winXray/raw/master/release/winXray.7z'><span>点这里下载</span></a></strong><span>
+                    （ </span><a
+                    href='https://github.com/miduo2689/winXray/raw/master/release/winXray.7z'><span>64位版本</span></a><span>
+                    / </span><a
+                    href='https://github.com/miduo2689/winXray/raw/master/release/winXray32.7z'><span>32位版本</span></a><span>
+                    ），解压即可直接使用( 体积很小仅 </span><strong><a
+                        href='https://github.com/miduo2689/winXray/raw/master/release/winXray.7z'><span>6.1
+                            MB</span></a></strong><span> - 已自带 V-Two-Ray Core ）。</span></p>
+            <p><span>下面是用aardio做的演示：</span></p>
+            <p><span>下载源码解压：</span><img
+                    src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210810222727959.png"
+                    referrerpolicy="no-referrer" alt="image-20210810222727959"></p>
+            <p><span>点击进入文件夹，找到default文件使用aardio打开：</span><img
+                    src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210810222813545.png"
+                    referrerpolicy="no-referrer" alt="image-20210810222813545"></p>
+            <p><img src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210810222900747.png"
+                    referrerpolicy="no-referrer" alt="image-20210810222900747"></p>
+            <p><span>如果对这方面有了解，可以自己修改，在这里先不说我修改的方案，咱们直接编译。点击上方“发布”</span><img
+                    src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210810223019435.png"
+                    referrerpolicy="no-referrer" alt="image-20210810223019435"></p>
+            <p><span>会弹出一个黑色窗口</span><img
+                    src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210810223054035.png"
+                    referrerpolicy="no-referrer" alt="image-20210810223054035"></p>
+            <p><span>按照提示输入’y‘，回车，就会生成一个压缩包，之后会在弹出一个窗口，</span><img
+                    src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210810223232280.png"
+                    referrerpolicy="no-referrer" alt="image-20210810223232280"><span>这个窗口不用管他，关闭即可。你也可以点击按钮进行操作。</span>
+            </p>
+            <p><span>现在就可以关闭aardio了。编译好的压缩包会在</span><strong><span>源码</span></strong><span>（不要到aardio目录下找）目录下的release文件夹中，而可以直接运行的版本在源码目录下的WinXray文件夹中。</span>
+            </p>
+            <p><span>还可以制作单文件版，但是这里先不展开了。</span></p>
+            <h2 id='获取服务节点'><span>获取服务节点</span></h2>
+            <p><span>当然这款软件是支持我们前面提到的狗子云服务器的，可以导入狗子云订阅，也可以直接导入服务器。</span></p>
+            <p><span>我们还可以用其他方法获取更多服务器节点，下面就介绍一种方法。</span></p>
+            <h3 id='使用爬虫获取服务器'><span>使用爬虫获取服务器</span></h3>
+            <p><span>我使用的是一个国外Youtuber制作的网站。如果有需要的，可以给我发邮件，我会将这个网站分享给你，这里暂时不方便透露。</span></p>
+            <p><span>这是这个youtuber的网站，国内是无法访问的</span><img
+                    src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210811081415019.png"
+                    referrerpolicy="no-referrer" alt="image-20210811081415019"></p>
+            <p><span>如果你从国内进入，会提示你下图：</span><img
+                    src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210811081608188.png"
+                    referrerpolicy="no-referrer" alt="image-20210811081608188"></p>
+            <p>&nbsp;</p>
+            <p><span>节点列表如图：</span><img
+                    src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210811080504501.png"
+                    referrerpolicy="no-referrer" alt="image-20210811080504501"></p>
+            <p><span>可以看到有很多节点，但是要注意，这里面也是有相当一部分不可用。而且这里的节点数量较多，一次不能完全导入WinXray。可这里的节点进行筛选：</span></p>
+            <blockquote>
+                <p><span>参数列表：</span></p>
+                <pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false"
+                    lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.8px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">c -- 国家地区：如美国=US，日本=JP，香港=HK，台湾=TW，新加坡=SG，加拿大=CA，英国=GB，澳大利亚=AU，德国=DE，法国=FR，瑞士=CH，荷兰=NL，印度=ID，</span></pre>
+        </div>
+        <pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre>
+        <pre class=" CodeMirror-line "
+            role="presentation"><span role="presentation" style="padding-right: 0.1px;">type -- 协议名：可选ss,ssr,vmess,trojan</span></pre>
+        <pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre>
+        <pre class=" CodeMirror-line "
+            role="presentation"><span role="presentation" style="padding-right: 0.1px;">speed -- 速度：speed=10,30 ----筛选速度在10到30之间的节点 &nbsp; &nbsp;  按速度筛选不常用，常用国家和协议配合筛选。</span></pre>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 333px;"></div>
+    <div class="CodeMirror-gutters" style="display: none; height: 333px;"></div>
+    </div>
+    </div>
+    </pre>
+    </blockquote>
+    <p><span>如：我要筛选日本、台湾、香港的服务器，协议要Trojan和Vmess，我可以在网址后面加入</span></p>
+    <pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false"
+        lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.8px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre>
+    </div>
+    <div class="CodeMirror-measure"></div>
+    <div style="position: relative; z-index: 1;"></div>
+    <div class="CodeMirror-code" role="presentation">
+        <div class="CodeMirror-activeline" style="position: relative;">
+            <div class="CodeMirror-activeline-background CodeMirror-linebackground"></div>
+            <div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div>
+            <pre class=" CodeMirror-line "
+                role="presentation"><span role="presentation" style="padding-right: 0.1px;">clash/proxies?c=JP,TW,HG&amp;type=vmess,trojan</span></pre>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 51px;"></div>
+    <div class="CodeMirror-gutters" style="display: none; height: 51px;"></div>
+    </div>
+    </div>
+    </pre>
+    <p><img src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210811083934217.png"
+            referrerpolicy="no-referrer" alt="image-20210811083934217"></p>
+    <p><span>可以发现，节点少了很多。这些都是按照条件筛选出来的节点。</span></p>
+    <p><span>全选复制</span><img src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210811084137681.png"
+            referrerpolicy="no-referrer" alt="image-20210811084137681"></p>
+    <p><span>在WinXray中右键&gt;&gt;&gt;剪贴板导入即可。之后会自动测速，待测速完成后可以进行排序。</span><img
+            src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/1628642620812.gif"
+            referrerpolicy="no-referrer" alt="1628642620812"></p>
+    <p><span>之后我们打开YouTube，找到一个4K视频看看访问状况</span></p>
+    <p><img src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.2/img/1628649195938.gif"
+            referrerpolicy="no-referrer" alt="1628645482078_1"></p>
+    <p><span>(最后不小心有个谷歌广告啊哈哈</span><img
+            src="https://img2020.cnblogs.com/blog/2493192/202108/2493192-20210811104026706-1595259466.png"
+            referrerpolicy="no-referrer" alt="image"><span>)此时的统计信息是40,000多KBPS</span></p>
+    <p><img src="https://cdn.jsdelivr.net/gh/li-kangfeng/BlogImage@1.1/img/image-20210811085253894.png"
+            referrerpolicy="no-referrer" alt="image-20210811085253894"></p>
+    <p><span>最高时可以达到90,000KBPS</span></p>
+    <p>&nbsp;</p>
+    <p><span>更多使用小技巧还可以自己逐渐摸索。</span></p>
+    <p><span>这便是WinXray使用的简单概述，感谢阅读。</span></p>
+    <h2 id='辅助网址'><span>辅助网址</span></h2>
+    <p><span>这里</span><a
+            href='https://www.youtube.com/watch?v=RqKi697f8jU'><span>观看视频教程（YouTube）</span></a><span>（需代理）</span></p>
+    <p><span>详细筛选教程：</span><a href='https://yugogo.xyz/?p=1117'><span>点击查看</span></a><span>（需代理）</span></p>
+    <p><span>爬虫演示网站：</span><a
+            href='https://proxy.yugogo.xyz/?_ga=2.23964472.384213242.1628640682-102379957.1628640682'><span>点击转到</span></a><span>（不需代理）</span>
+    </p><!-- 全部节点列表：[点击转到](https://proxy.yugogo.xyz/clash/proxies)（不需代理）-->
+    <p><span>全部节点列表：</span><a href='https://www.bing.com/?mkt=en-US'><span>点击转到</span></a></p>
+    <p>&nbsp;</p>
+    </div>
+    </div>
+</body>
+
+</html>
